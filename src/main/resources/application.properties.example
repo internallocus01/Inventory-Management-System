@@ -1,0 +1,7 @@
+spring.application.name=inventory_management_system
+spring.datasource.url=jdbc:postgresql://localhost:3901/database_name
+spring.datasource.username=database_username
+spring.datasource.password=database_password
+spring.jpa.hibernate.ddl-auto=validate
+spring.jpa.show-sql=true
+server.port=8080
