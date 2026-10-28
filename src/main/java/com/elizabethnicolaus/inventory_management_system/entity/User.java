@@ -34,8 +34,8 @@ public class User {
     @Column(name="is_active", nullable=false)
     private Boolean isActive= true;
 
-    @Column (name="created_at", nullable=false, updatable=false)
     @CreationTimestamp //fills this field with the current date/time automatically
+    @Column (name="created_at", nullable=false, updatable=false)
     private LocalDateTime createdAt;
     
     public User(){
@@ -44,7 +44,7 @@ public class User {
     public User(String username,String name,String passwordHash,Role role,Boolean isActive){
         this.username=username;
         this.name=name;
-        this.passwordHash=passwordHash;
+        this.passwordHash=passwordHash;  
         this.role=role;
         this.isActive=isActive;
     }
